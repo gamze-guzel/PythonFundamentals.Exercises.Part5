@@ -10,8 +10,8 @@ def get_item_at_position(list_in: List, pos: int) -> List:
     :param pos: Position of desired item in list_in
     :return: Item in pos
     """
-    pass  # remove pass statement and implement me
-
+    # pass  # remove pass statement and implement me
+    return list_in[pos]
 
 def print_list_items(list_in: List) -> None:
     """
@@ -20,7 +20,9 @@ def print_list_items(list_in: List) -> None:
     :param list_in: Input list
     :return: None
     """
-    pass  # remove pass statement and implement me
+    # pass  # remove pass statement and implement me
+    for elements in list_in:
+        print(elements)
 
 
 def sort_by_commit_count(list_in: List) -> List:
@@ -40,7 +42,7 @@ def gen_list_of_nums(n: int) -> List[int]:
     :param n: The number of items the result should contain
     :return: A list of integers
     """
-    pass  # remove pass statement and implement me
+    return list(range(0,n))  # remove pass statement and implement me
 
 
 def half_list(list_in: List, half: int) -> List:
@@ -61,8 +63,11 @@ def remove_odds(list_in: List[int]) -> None:
 
     :return: None
     """
-    pass  # remove pass statement and implement me
-
+    # pass  # remove pass statement and implement me
+    for int in list_in:
+        if int %2 != 0:
+            list_in.remove(int)
+    return list_in
 
 def remove_evens(list_in: List[int]) -> None:
     """
@@ -70,8 +75,11 @@ def remove_evens(list_in: List[int]) -> None:
 
     :return: None
     """
-    pass  # remove pass statement and implement me
-
+    # pass  # remove pass statement and implement me
+    for int in list_in:
+        if int %2 == 0:
+            list_in.remove(int)
+    return list_in
 
 def concatenate_lists(list_a: List, list_b: List) -> List:
     """
@@ -81,8 +89,8 @@ def concatenate_lists(list_a: List, list_b: List) -> List:
     :param list_b: Another list
     :return: A list containing all elements from list_a and list_b
     """
-    pass  # remove pass statement and implement me
-
+    # pass  # remove pass statement and implement me
+    return list_a + list_b
 
 def multiply_list(list_in: List, scalar: int) -> List:
     """
@@ -93,4 +101,5 @@ def multiply_list(list_in: List, scalar: int) -> List:
     :param scalar: An integer
     :return: A list
     """
-    pass  # remove pass statement and implement me
+    # pass  # remove pass statement and implement me
+    return list_in * scalar
